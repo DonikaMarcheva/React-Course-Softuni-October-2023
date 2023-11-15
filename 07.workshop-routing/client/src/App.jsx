@@ -1,10 +1,12 @@
+import { Header } from "./components/Header/Header.jsx"
+
 
 function App() {
 
   return (
-    <>
-<h1>aaaa</h1>
-    </>
+    <div id="box">
+     <Header/>
+    </div>
   )
 }
 
