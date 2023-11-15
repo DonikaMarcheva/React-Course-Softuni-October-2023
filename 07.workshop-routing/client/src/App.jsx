@@ -4,6 +4,7 @@ import Header from "./components/header/Header.jsx"
 import Home from "./components/home/Home.jsx"
 import { Routes, Route } from 'react-router-dom'
 import Login from "./components/login/Login.jsx"
+import Register from "./components/register/Register.jsx"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/games" element={<GameList />} />
         <Route path="/games/create" element={<GameCreate />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
       </Routes>
     </div>
