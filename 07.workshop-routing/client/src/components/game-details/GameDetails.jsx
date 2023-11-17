@@ -22,7 +22,8 @@ export default function GameDetails () {
             gameId,
             formData.get('username'),
             formData.get('comment')
-            )
+            );
+            setComments(state=>[...state,newComment])
         }
 
 
