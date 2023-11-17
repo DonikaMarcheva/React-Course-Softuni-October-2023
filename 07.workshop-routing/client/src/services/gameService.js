@@ -13,3 +13,8 @@ export const create = async (gameData) => {
     return result;
 }
 
+export const getOne = async (gameId) => {
+    const result = await request.get(`${baseUrl}/${gameId}`);
+    return result;
+}
+
