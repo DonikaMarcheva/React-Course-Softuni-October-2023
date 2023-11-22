@@ -6,11 +6,20 @@ import { Routes, Route } from 'react-router-dom'
 import Login from "./components/login/Login.jsx"
 import Register from "./components/register/Register.jsx"
 import GameDetails from "./components/game-details/GameDetails.jsx"
+import { useState } from "react"
+import AuthContext from "./contexts/authContext.js"
 
 
 function App() {
 
+  const [auth, useAuth] = useState({});
+
+  const loginSubmitHandler=(values)=>{
+    console.log(values);
+  }
+
   return (
+    <AuthContext.Provider value={loginSubmitHandler}>
     <div id="box">
       <Header />
       <Routes>
@@ -23,6 +32,7 @@ function App() {
 
       </Routes>
     </div>
+    </AuthContext.Provider>
   )
 }
 
